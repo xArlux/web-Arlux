@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONTACTO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ACERCA DE.html">ACERCA DE</a></li>
+                <li><a href="SERVICIOS.html">SERVICIOS</a></li>
+                <li><a href="PORTAFOLIO.html">PORTAFOLIO</a></li>
+                <li><a href="CONTACTO.html">CONTACTOS</a></li>
+                <li><a href="index.html">REGRESO A INICIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1><center>Contactanos</center></h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Informacion </legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            <label for="Grado">Seleccione su Producto</label>
+            <select id="Grado" name="Grado"><br>
+                <option value="1ro de secundaria">1</option>
+                <option value="2do de secundaria">2</option>
+            </select><br><br>
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+            <legend>de donde proviene:  </legend><br>
+            <label for="Colegiodondeproviene">Indique su Pais/Region</label> 
+            <input type="text" id="Colegiodondeproviene" name="Colegiodondeproviene" required><br><br>
+            <legend>Genero<br></legend>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="Femenino" required>
+            <label for="femenino">Femenino</label><br><br>
+            <legend><i></i></legend>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <p><center>Mas Informacion al 000415</center> </p>
+</body>
+</html>
